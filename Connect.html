@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Connect | Destiya Nurfadillah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="connect-page">
+    <div class="connect-outer">
+        <h1 class="connect-heading">Let's Connect</h1>
+        <div class="connect-inner">
+            <section class="connect-info">
+                <h2>About Me</h2>
+                <p>
+                    Saya merupakan mahasiswa D3 Manajemen Informatika
+                    Universitas Lampung yang memiliki motivasi dan semangat
+                    belajar tinggi serta ketertarikan pada dunia teknologi,
+                    kreativitas, dan pengembangan diri.
+                </p>
+                <p>
+                    Saya senang mempelajari hal baru serta mengembangkan
+                    keterampilan melalui kegiatan akademik maupun organisasi.
+                </p>
+            </section>
+
+            <section class="connect-info">
+                <h2>Experience</h2>
+                <p>
+                    Selama menjalankan perkuliahan, saya terlibat dalam
+                    berbagai kegiatan akademik dan project yang membantu
+                    meningkatkan kemampuan dalam bekerja sama, bertanggung
+                    jawab, dan mengatur waktu.
+                </p>
+                <p>
+                    Saya juga memiliki pengalaman Praktik Kerja Lapangan
+                    di Instansi Pemerintah Kota Metro dalam pengelolaan
+                    data dan pengarsipan dokumen.
+                </p>
+            </section>
+
+            <section class="connect-info">
+                <h2>Organization</h2>
+                <p>
+                    Saya aktif dalam Himpunan Mahasiswa Jurusan Ilmu Komputer
+                    FMIPA Unila pada bidang keilmuan dan UKM PIK R RAYA
+                    Universitas Lampung pada bidang Pengembangan Sumber Daya
+                    Manusia (PSDM).
+                </p>
+                <p>
+                    Melalui kegiatan organisasi, saya mendapatkan pengalaman
+                    dalam bekerja sama, berkomunikasi, dan berkontribusi
+                    dalam berbagai kegiatan.
+                </p>
+            </section>
+
+            <section class="connect-info">
+                <h2>Skills</h2>
+                <p>
+                    Saya memiliki keterampilan dasar dalam HTML, CSS, Java,
+                    Microsoft Office, pengelolaan dokumen, komunikasi,
+                    dan teamwork.
+                </p>
+            </section>
+        </div>
+
+        <button type="button" class="connect-toggle" id="connectToggle">
+            Tak kenal maka tak sayang, yaudahh ayo kenalan bersama
+        </button>
+        <div class="connect-contacts" id="connectContacts">
+            <a href="https://wa.me/+6285839799600" target="_blank">WhatsApp</a>
+            <a href="mailto:destiyanur304@gmail.com">Email</a>
+            <a href="https://www.tiktok.com/@destiyaa1" target="_blank">Tiktok</a>
+        </div>
+        <a href="DestiyaNurfadillah_2507071004_Tugas1WebPrak.html" class="connect-back-button">Kembali</a>
+
+        <footer class="connect-footer">
+            <p>© 2026 Destiya Nurfadillah</p>
+            <p>Tugas 1 | Pemrograman Web</p>
+        </footer>
+    </div>
+
+    <script>
+        const connectToggle = document.getElementById("connectToggle");
+        const connectContacts = document.getElementById("connectContacts");
+        connectToggle.addEventListener("click", function () {connectContacts.classList.toggle("active");});
+    </script>
+</body>
+</html>

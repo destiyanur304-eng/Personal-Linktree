@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 15px;
+    background-color: #38BDF8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 40px 30px 30px;
+    background-color: #111936;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.40);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #c9cee0;
+}
+
+.description {
+    font-size: 13px;
+    color: #8e97b5;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 17px 20px;
+    background-color: #303db4;
+    border: 2px solid #4b58c9;
+    border-radius: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.link-box:hover {
+    background-color: #4856d1;
+    border-color: #6874e5;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.30);
+}
+
+.arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.link-box:hover .arrow {
+    transform: translateX(6px);
+}
+
+.youtube-section{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.youtube-section h2{
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.youtube-frame{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 14px;
+    background-color: #0b112b;
+    border: 2PX solid #303db4;
+    box-shadow: 0 8px 20PX rgba(0, 0, 0, 0.30);
+    transform: 0.3s ease;
+}
+
+.youtube-frame:hover{
+    border-color: #6874e5;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
+}
+
+.youtube-frame iframe{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.container footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #737d9c;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.connect-page {
+    min-height: 100vh;
+    padding: 40px 15px;
+    background-color: #38BDF8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.connect-page .connect-outer {
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 35px 30px 30px;
+    background-color: #111936;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.40);
+}
+
+.connect-page .connect-heading {
+    margin: 0 0 25px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.connect-page .connect-inner {
+    width: 100%;
+    padding: 25px;
+    background-color: #1d263b;
+    border: 1px solid #29345e;
+    border-radius: 17px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.connect-page .connect-info {
+    margin: 0 0 22px;
+    padding: 0;
+}
+
+.connect-page .connect-info:last-child {
+    margin-bottom: 0;
+}
+
+.connect-page .connect-info h2 {
+    margin: 0 0 9px;
+    color: #7f9cff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.connect-page .connect-info p {
+    margin: 0 0 7px;
+    color: #c8d0e3;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.connect-page .connect-toggle {
+    display: block;
+    margin: 22px auto 20px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #aeb8d2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.connect-page .connect-toggle:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.connect-page .connect-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        margin 0.3s ease;
+}
+
+.connect-page .connect-contacts.active {
+    max-height: 220px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.connect-page .connect-contacts a {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #303db4;
+    border: 1px solid #4b58c9;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.connect-page .connect-contacts a:hover {
+    background-color: #4856d1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.20);
+}
+
+.connect-page .connect-back-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #303db4;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.connect-page .connect-back-button:hover {
+    background-color: #4856d1;
+    transform: translateY(-3px);
+}
+
+.connect-page .connect-footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #737d9c;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 30px 18px 25px;
+        border-radius: 22px;
+    }
+
+    .profile-img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .profile h1 {
+        font-size: 23px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .link-box {
+        padding: 15px 17px;
+        font-size: 15px;
+    }
+
+    .connect-page {
+        padding: 20px 10px;
+    }
+
+    .connect-page .connect-outer {
+        padding: 30px 18px 25px;
+        border-radius: 22px;
+    }
+
+    .connect-page .connect-heading {
+        font-size: 23px;
+    }
+
+    .connect-page .connect-inner {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .connect-page .connect-info h2 {
+        font-size: 16px;
+    }
+
+    .connect-page .connect-info p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .connect-page .connect-toggle {
+        text-align: center;
+        font-size: 12px;
+    }
+}
